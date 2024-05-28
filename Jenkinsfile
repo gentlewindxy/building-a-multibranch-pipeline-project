@@ -2,14 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Sayhi') {
             steps {
-                sh 'npm install'
-            }
-        }
-        stage('Test') {
-            steps {
-                sh './jenkins/scripts/test.sh'
+                sh 'Hello pipeline'
             }
         }
     }
