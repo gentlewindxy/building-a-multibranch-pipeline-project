@@ -2,6 +2,11 @@ pipeline {
     agent any
 
     stages {
+    	stage(‘Hello’) {
+	    steps {
+	    	sh 'echo "Hello"'
+	    }
+	}
         stage('Build') {
             steps {
                 sh 'npm install'
